@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+:root {
+    --fonte1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+
+    --cor1: #4c0465;
+    --cor2: #1c1c1c;
+    --cor3: #720796;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fonte1);
+}
+
+header {
+    min-height: 500px;
+    background-color: grey;
+    background-image: url('../imagens/bg-gato.jpg');
+    background-position: center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+header > img {
+    width: 200px;
+}
+
+nav {
+    display: inline-block;
+    min-width: 50%;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+    padding-top: 10%;
+    margin-left: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    color: var(--cor1);
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.572);
+    border-radius: 10px;
+    color: var(--cor3);
+}
+
+header > div {
+    background-color: rgba(255, 255, 255, 0.572);
+    border-radius: 20px;
+    min-width: 50%;
+    max-width: 60%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    color: var(--cor2);
+}
+
+
+div > h1 {
+    padding: 0 20px 20px 20px;
+}
+
+div > p {
+    padding: 0 10px 0 10px;
+    font-weight: bold;
+}

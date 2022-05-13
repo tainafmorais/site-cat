@@ -14,6 +14,7 @@
     --cor3: #720796;
     --cor4: #2c1532;
     --cor5: #8400b4;
+    --cor6: #4d354a;
 }
 
 * {
@@ -60,7 +61,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    background-color: rgba(194, 70, 113, 0.229);
+    background-color: rgba(274, 177, 245, 0.4);
     border-radius: 10px;
     color: var(--cor1);
 }
@@ -115,7 +116,7 @@ footer {
 }
 
 .footer-1 {
-    background-color: rgb(194, 70, 113);
+    background-color: rgb(274, 177, 245);
     text-align: center;
     font-family: var(--fonte2);
     color: #000000;
@@ -137,7 +138,7 @@ footer {
 
 .footer-2 {
     height: 20px;
-    background-color: rgb(69, 24, 39);
+    background-color: var(--cor6);
     text-align: right;
     color: #ffffff;
     font-size: 0.7em;

@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;900&display=swap');
+
+:root {
+    --fonte1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fonte2: 'El Messiri', sans-serif;
+    --fonte3: 'Mada', sans-serif;
+
+    --cor1: #4c0465;
+    --cor2: #1c1c1c;
+    --cor3: #720796;
+    --cor4: #2c1532;
+    --cor5: #8400b4;
+    --cor6: #4d354a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fonte3);
+}
+
+header {
+    min-height: 500px;
+    background-color: grey;
+    background-image: url('../imagens/bg-gato.jpg');
+    background-position: bottom center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-family: var(--fonte2);
+}
+
+header > img {
+    width: 200px;
+}
+
+nav {
+    display: inline-block;
+    min-width: 50%;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+    padding-top: 10%;
+    margin-left: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    color: var(--cor2);
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: rgba(274, 177, 245, 0.4);
+    border-radius: 10px;
+    color: var(--cor1);
+}
+
+header > div {
+    background-color: rgba(255, 255, 255, 0.572);
+    border-radius: 20px;
+    min-width: 50%;
+    max-width: 60%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    color: var(--cor2);
+}
+
+
+header > div > h1 {
+    padding: 0 20px 20px 20px;
+    font-size: 1.8em;
+}
+
+header > div > p {
+    padding: 0 10px 0 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.fotos-main {
+    max-width: 1000px;
+    min-height: 800px;
+    margin: auto;
+}
+
+
+.fotos-h1 {
+    margin: 50px 0px 20px 0px;
+    text-align: center;
+    color: var(--cor4);
+}
+
+.galeria-01 img {
+    width: 300px;
+    border-radius: 4px;
+}
+
+.galeria-01 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: start;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+
+
+
+
+
+
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-1 {
+    background-color: #4d04653d;
+    /* background-color: #feb1f5ac; */
+    text-align: center;
+    font-family: var(--fonte2);
+    color: #000000;
+}
+
+.footer-1 h3 {
+    font-size: 1.5em;
+    padding-top: 1em;
+}
+
+.footer-1 p {
+    font-size: 1em;
+    padding-bottom: 1em;
+}
+
+.footer-1 img {
+    width: 50px;
+    padding: 0px 0.5em 0px 0.5em;
+}
+
+.footer-2 {
+    height: 20px;
+    background-color: var(--cor6);
+    text-align: right;
+    color: #ffffff;
+    font-size: 0.7em;
+    padding: 5px 10px 0 10px;
+    font-family: var(--fonte3);
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0 10px 0 10px;
+    font-weight: bolder;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: goldenrod;
+}

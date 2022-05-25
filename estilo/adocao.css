@@ -90,32 +90,152 @@ header > div > p {
     font-size: 1.3em;
 }
 
-.fotos-main {
-    max-width: 1000px;
-    min-height: 800px;
-    margin: auto;
+
+
+
+
+.grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 60px;
 }
 
 
-.fotos-h1 {
-    margin: 50px 0px 20px 0px;
+
+.gatos-h1 {
+    grid-column: 1/3;
+    margin-bottom: 30px;
     text-align: center;
-    color: var(--cor4);
+    color: #4d04657d;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
 }
 
-.galeria-01 img {
-    width: 300px;
-    border-radius: 4px;
+.grid-section img {
+    display: block;
+    max-width: 100%;
 }
 
-.galeria-01 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-content: start;
-    justify-content: center;
-    padding: 50px 0px;
+ul {
+    list-style: none;
 }
+
+.gatos-lista {
+    height: 350px;
+    width: 400px;
+    overflow-y: scroll;
+    justify-self: end;
+}
+
+.gatos-lista li {
+    cursor: pointer;
+    position: relative;
+}
+
+.gatos-lista li:nth-child(1):before {
+    content: '🐾 Alaska';
+    display: block;
+    width: 80px;
+    height: 25px;
+    background-color: #ffffff;
+    position: absolute;
+    color: var(--cor1);
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.gatos-lista li:nth-child(2):before {
+    content: '🐾 Kate';
+    display: block;
+    width: 65px;
+    height: 25px;
+    background-color: #ffffff;
+    position: absolute;
+    color: var(--cor1);
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.gatos-lista li:nth-child(3):before {
+    content: '🐾 Almôndega';
+    display: block;
+    width: 115px;
+    height: 25px;
+    background-color: #ffffff;
+    position: absolute;
+    color: var(--cor1);
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.gatos-lista li:nth-child(4):before {
+    content: '🐾 Moon';
+    display: block;
+    width: 75px;
+    height: 25px;
+    background-color: #ffffff;
+    position: absolute;
+    color: var(--cor1);
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.gatos-lista::-webkit-scrollbar {
+    width: 18px;
+}
+
+.gatos-lista::-webkit-scrollbar-thumb {
+    background: #4d04657d;
+    border-left: 4px solid #ffffff;
+    border-right: 4px solid #ffffff;
+}
+
+.gatos-lista::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+.gatos-descricao h2 {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: var(--cor1);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.gatos-descricao h2::before {
+    content: '';
+    display: inline-block;
+    width: 35px;
+    height: 10px;
+    margin-right: 10px;
+    background-color: #4d04657d;
+}
+
+.gatos-descricao p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    max-width: 50ch;
+}
+
+
+
+/* TAB PARA QUANDO CLICAR NA FOTO APARECER A DESCRIÇÃO */
+
+.js .js-tabcontent section {    /* Essa classe está no link do HTML para que o JS só funcione se a pessoa tiver o JS habilitado */
+    display: none;
+}
+
+.js-tabcontent section.ativo {
+    display: block !important;
+    animation: show .5s forwards;
+}
+
 
 
 
@@ -171,4 +291,48 @@ footer a {
 footer a:hover {
     text-decoration: underline;
     color: goldenrod;
+}
+
+
+
+
+@media (max-width: 800px) {
+    .grid-section {
+        grid-template-columns: 1fr;
+        margin: 30px;
+    }
+    .gatos-h1,
+    .gatos-lista,
+    .gatos-descricao {
+        grid-column: 1;
+    }
+    .gatos-lista {
+        justify-self: start;
+        margin: 10px;
+        margin: auto;
+    }
+    .gatos-descricao {
+        justify-self: center;
+        margin: 10px;
+        margin: auto;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .gatos-lista {
+        height: 300px;
+        width: 300px;
+    }
+    .gatos-h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+    .gatos-descricao h2 {
+        font-size: 1.3rem;
+    }
+    .gatos-descricao p {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
 }

@@ -134,56 +134,19 @@ ul {
     position: relative;
 }
 
-.gatos-lista li:nth-child(1):before {
-    content: '🐾 Alaska';
+.gatos-lista li::before {
+    content: '🐾 Arraste e clique';
     display: block;
-    width: 80px;
-    height: 25px;
+    width: 130px;
+    height: 20px;
     background-color: #ffffff;
     position: absolute;
     color: var(--cor1);
     margin-top: 20px;
     font-weight: bold;
-    font-size: 1rem;
-}
-
-.gatos-lista li:nth-child(2):before {
-    content: '🐾 Kate';
-    display: block;
-    width: 65px;
-    height: 25px;
-    background-color: #ffffff;
-    position: absolute;
-    color: var(--cor1);
-    margin-top: 20px;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-.gatos-lista li:nth-child(3):before {
-    content: '🐾 Almôndega';
-    display: block;
-    width: 115px;
-    height: 25px;
-    background-color: #ffffff;
-    position: absolute;
-    color: var(--cor1);
-    margin-top: 20px;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-.gatos-lista li:nth-child(4):before {
-    content: '🐾 Moon';
-    display: block;
-    width: 75px;
-    height: 25px;
-    background-color: #ffffff;
-    position: absolute;
-    color: var(--cor1);
-    margin-top: 20px;
-    font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    padding: 5px;
+    border-radius: 0 4px 4px 0;
 }
 
 .gatos-lista::-webkit-scrollbar {
